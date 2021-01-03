@@ -72,7 +72,7 @@ $self->log_debug($url);
     }
 
     # Looks good!
-    $self->log('GitHub Actions run successful');
+    $self->log_debug('GitHub Actions run successful');
     last;
   }
 }

@@ -16,13 +16,8 @@ my %WriteMakefileArgs = (
   "LICENSE" => "artistic_2",
   "NAME" => "Dist::Zilla::Plugin::GitHub::RequireGreenBuild",
   "PREREQ_PM" => {
-    "Dist::Zilla::Plugin::Bootstrap::lib" => 0,
-    "Dist::Zilla::Plugin::GitHub" => 0,
-    "Dist::Zilla::Plugin::MetaJSON" => 0,
-    "Dist::Zilla::Plugin::MetaYAML" => 0,
-    "Dist::Zilla::Plugin::RunExtraTests" => 0,
-    "Dist::Zilla::Plugin::Test::EOF" => 0,
-    "Dist::Zilla::Plugin::Test::EOL" => 0
+    "Dist::Zilla::Plugin::Git" => 0,
+    "Dist::Zilla::Plugin::GitHub" => 0
   },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
@@ -39,13 +34,8 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Dist::Zilla::Plugin::Bootstrap::lib" => 0,
+  "Dist::Zilla::Plugin::Git" => 0,
   "Dist::Zilla::Plugin::GitHub" => 0,
-  "Dist::Zilla::Plugin::MetaJSON" => 0,
-  "Dist::Zilla::Plugin::MetaYAML" => 0,
-  "Dist::Zilla::Plugin::RunExtraTests" => 0,
-  "Dist::Zilla::Plugin::Test::EOF" => 0,
-  "Dist::Zilla::Plugin::Test::EOL" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
   "Test2::V0" => 0,
