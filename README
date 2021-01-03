@@ -1,0 +1,38 @@
+NAME
+
+    Dist::Zilla::Plugin::GitHub::RequireGreenBuild - Require a successful
+    GitHub Actions workflow run
+
+SYNOPSIS
+
+      Configure Git with your GitHub login name:
+    
+        $ git config --global github.user YourLoginUsername
+    
+      then in your dist.ini:
+    
+        [GitHub::RequireGreenBuild]
+
+DESCRIPTION
+
+    This Dist::Zilla plugin checks your GitHub Actions for a successful
+    run, before allowing a release.
+
+    e.g. until we can determine that you have a green build for a GitHub
+    Actions run against HEAD, you're not allowed to release.
+
+AUTHOR
+
+    Graham TerMarsch (cpan@howlingfrog.com)
+
+COPYRIGHT
+
+    Copyright (C) 2020-, Graham TerMarsch. All Rights Reserved.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same license as Perl itself.
+
+SEE ALSO
+
+    Dist::Zilla
+
