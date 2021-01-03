@@ -1,0 +1,4 @@
+Revision history for Perl extension Dist::Zilla::Plugin::GitHub::RequireGreenBuild
+
+{{$NEXT}}
+    - Initial release
