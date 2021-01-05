@@ -106,6 +106,13 @@ before allowing a release.
 e.g. until we can determine that you have a green build for a GitHub Actions run
 against C<HEAD>, you're not allowed to release.
 
+To determine whether or not a successful run exists, we page through all of
+your GitHub Actions runs, to find a successful run for the current C<HEAD> SHA.
+
+This comes with the implicit expectation that you have already pushed your
+commits back up to GitHub.  If you haven't pushed, we find any runs matching the
+current C<HEAD>, and you won't be able to release.
+
 =head1 AUTHOR
 
 Graham TerMarsch (cpan@howlingfrog.com)
