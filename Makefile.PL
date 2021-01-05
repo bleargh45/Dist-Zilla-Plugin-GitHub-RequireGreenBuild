@@ -16,15 +16,20 @@ my %WriteMakefileArgs = (
   "LICENSE" => "artistic_2",
   "NAME" => "Dist::Zilla::Plugin::GitHub::RequireGreenBuild",
   "PREREQ_PM" => {
-    "Dist::Zilla::Plugin::Git" => 0,
-    "Dist::Zilla::Plugin::GitHub" => 0
+    "Dist::Zilla" => 0,
+    "Dist::Zilla::Plugin::GitHub" => 0,
+    "Git::Wrapper" => 0,
+    "HTTP::Tiny" => 0,
+    "namespace::clean" => 0
   },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
-    "Test2::V0" => 0,
+    "File::Temp" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
     "Test::DiagINC" => "0.002",
-    "Test::More" => 0
+    "Test::More" => "0.94"
   },
   "VERSION" => "0.01",
   "test" => {
@@ -34,13 +39,18 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Dist::Zilla::Plugin::Git" => 0,
+  "Dist::Zilla" => 0,
   "Dist::Zilla::Plugin::GitHub" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
-  "Test2::V0" => 0,
+  "File::Temp" => 0,
+  "Git::Wrapper" => 0,
+  "HTTP::Tiny" => 0,
+  "IO::Handle" => 0,
+  "IPC::Open3" => 0,
   "Test::DiagINC" => "0.002",
-  "Test::More" => 0
+  "Test::More" => "0.94",
+  "namespace::clean" => 0
 );
 
 

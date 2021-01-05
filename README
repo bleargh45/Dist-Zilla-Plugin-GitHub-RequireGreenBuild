@@ -5,13 +5,8 @@ NAME
 
 SYNOPSIS
 
-      Configure Git with your GitHub login name:
-    
-        $ git config --global github.user YourLoginUsername
-    
-      then in your dist.ini:
-    
-        [GitHub::RequireGreenBuild]
+      # in your dist.ini:
+      [GitHub::RequireGreenBuild]
 
 DESCRIPTION
 
@@ -21,13 +16,21 @@ DESCRIPTION
     e.g. until we can determine that you have a green build for a GitHub
     Actions run against HEAD, you're not allowed to release.
 
+    To determine whether or not a successful run exists, we page through
+    all of your GitHub Actions runs, to find a successful run for the
+    current HEAD SHA.
+
+    This comes with the implicit expectation that you have already pushed
+    your commits back up to GitHub. If you haven't pushed, we find any runs
+    matching the current HEAD, and you won't be able to release.
+
 AUTHOR
 
     Graham TerMarsch (cpan@howlingfrog.com)
 
 COPYRIGHT
 
-    Copyright (C) 2020-, Graham TerMarsch. All Rights Reserved.
+    Copyright (C) 2021-, Graham TerMarsch. All Rights Reserved.
 
     This is free software; you can redistribute it and/or modify it under
     the same license as Perl itself.
@@ -35,4 +38,6 @@ COPYRIGHT
 SEE ALSO
 
     Dist::Zilla
+
+    Dist::Zilla::Plugin::GitHub
 

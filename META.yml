@@ -5,9 +5,11 @@ author:
 build_requires:
   ExtUtils::MakeMaker: '0'
   File::Spec: '0'
-  Test2::V0: '0'
+  File::Temp: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
   Test::DiagINC: '0.002'
-  Test::More: '0'
+  Test::More: '0.94'
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 0
@@ -22,10 +24,14 @@ no_index:
     - t
     - xt
 requires:
-  Dist::Zilla::Plugin::Git: '0'
+  Dist::Zilla: '0'
   Dist::Zilla::Plugin::GitHub: '0'
+  Git::Wrapper: '0'
+  HTTP::Tiny: '0'
+  namespace::clean: '0'
 resources:
-  repository: git://github.com/bleargh45/playground.git
+  bugtracker: https://github.com/bleargh45/Dist-Zilla-Plugin-GitHub-RequireGreenBuild/issues
+  repository: git://github.com/bleargh45/Dist-Zilla-Plugin-GitHub-RequireGreenBuild.git
 version: '0.01'
 x_generated_by_perl: v5.32.0
 x_serialization_backend: 'YAML::Tiny version 1.73'
