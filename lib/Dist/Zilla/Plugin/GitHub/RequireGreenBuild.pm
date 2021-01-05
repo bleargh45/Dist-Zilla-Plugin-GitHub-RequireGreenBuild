@@ -10,7 +10,7 @@ use HTTP::Tiny;
 use List::Util qw(first);
 use namespace::clean;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has repo_root => (
   is         => 'ro',
