@@ -81,7 +81,7 @@ sub before_release {
     }
 
     # Looks good!
-    $self->log_debug('GitHub Actions run successful');
+    $self->log("found successful GitHub Actions workflow run for $head_sha");
     last;
   }
 }
