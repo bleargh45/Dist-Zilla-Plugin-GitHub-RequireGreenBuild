@@ -2,6 +2,8 @@ Revision history for Perl extension Dist::Zilla::Plugin::GitHub::RequireGreenBui
 
 {{$NEXT}}
     - show successful status when running "dzil release" without "--verbose"
+    - list "Moose" as an explicit dependency, instead of having it implied
+      through our dependency on Dist::Zilla
 
 0.01      2021-01-04 22:34:44-08:00 America/Vancouver
     - Initial release
