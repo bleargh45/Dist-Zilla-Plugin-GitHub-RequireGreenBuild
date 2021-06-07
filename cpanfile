@@ -1,4 +1,4 @@
-requires "perl", ">= 5.014";
+requires "perl", ">= 5.020";
 requires "Dist::Zilla";
 requires "Dist::Zilla::Plugin::GitHub";
 requires "Git::Wrapper";
