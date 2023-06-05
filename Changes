@@ -1,6 +1,8 @@
 Revision history for Perl extension Dist::Zilla::Plugin::GitHub::RequireGreenBuild
 
 {{$NEXT}}
+
+0.04      2023-06-05 13:36:50-07:00 America/Vancouver
     - Enable verify_SSL=>1 when instantiating HTTP::Tiny.
 
 0.03      2021-06-21 10:19:12-07:00 America/Vancouver
